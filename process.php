@@ -26,7 +26,21 @@ $paragraph = $_GET["text"];
 	
 			<h2 class="text-warning display-3 fw-bold text-center">DATA RECIVED</h2>
 			<h3>
-				<?php echo "The length of the sent paragraph is " . strlen($paragraph) . " characters" ?>
+				<?php 
+					echo "The sent paragraph length is " . strlen($paragraph) . " characters";
+				?>
+			</h3>
+
+			<h3>
+				<?php 
+					echo str_replace("ciao", "***", $paragraph);
+				?>
+			</h3>
+
+			<h3>
+				<?php 
+					echo "The censored paragraph length is " . strlen(str_replace("ciao", "***", $paragraph)) . " characters";
+				?>
 			</h3>
 		</div>
 	</div>
