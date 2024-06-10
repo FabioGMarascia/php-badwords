@@ -26,7 +26,7 @@ $paragraph = $_GET["text"];
 	
 			<h2 class="text-warning display-3 fw-bold text-center">DATA RECIVED</h2>
 			<h3>
-				<?php echo $paragraph  ?>
+				<?php echo "The paragraph length is " . strlen($paragraph) . " characters" ?>
 			</h3>
 		</div>
 	</div>
